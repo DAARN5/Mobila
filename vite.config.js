@@ -14,9 +14,15 @@ export default defineConfig(({ command }) => {
     root: 'src',
 
     build: {
-      sourcemap: true,
       outDir: '../dist',
       emptyOutDir: true,
+      sourcemap: true,
+
+      rollupOptions: {
+        input: {
+          main: './src/index.html'
+        }
+      }
     },
 
     plugins: [
