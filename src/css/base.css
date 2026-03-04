@@ -1,0 +1,59 @@
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --main-cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #080c09;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+main {
+  flex-grow: 1;
+}
+main:has(.back-link) {
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hiden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}

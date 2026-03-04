@@ -1,0 +1,161 @@
+.feedback {
+  padding: 64px 0;
+  text-align: center;
+}
+
+.container-feedback {
+  position: relative;  
+}
+
+.feedback-title {
+  margin-bottom: 24px;
+  text-align: start;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+ .feedback-title { font-size: 34px;
+}
+}
+
+.feedback-subtitle {
+  color: #555;
+  margin-bottom: 80px;
+  font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: start;
+}
+
+.feedback-item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  height: 295px;
+  gap: 24px;
+  padding: 6px;
+}
+
+.feedback-container-buttons {
+margin-top: 68px;
+padding-bottom: 15px;
+}
+
+.feedback-stars {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.feedback-stars svg {
+ fill: #000;
+}
+
+.feedback-text {
+  text-align: start;
+  font-weight: 500;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.feedback-author {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.feedback-buttons {
+  position: absolute;
+  top: 90%;
+  right: 0; 
+  bottom: 16px;
+  display: flex;
+  flex-direction: row; 
+  gap: 10px;
+  transform: translateY(-50%);
+  pointer-events: auto;
+}
+
+.feedback-btn {
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  background: none;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+  transition: background 250ms ease, border-color 250ms ease;
+}
+
+.feedback-btn:active {
+  background:  #6B0609;
+}
+
+.feedback-btn svg {
+    width: 32px;
+    height: auto;
+  }
+
+.feedback-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.feedback-btn:hover:not(:disabled),
+.feedback-btn:focus:not(:disabled) {
+  background: #975052;
+  border-color: rgba(8, 12, 9, 0.15);
+  fill: #fff;
+}
+
+.feedback-pagination {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left !important;
+  width: auto !important;
+}
+
+.feedback-pagination .swiper-pagination-bullet {
+  background: #000;
+  opacity: 0.6;
+  transition: opacity 0.3s, background 0.3s;
+}
+
+.feedback-pagination .swiper-pagination-bullet-active {
+  background: #000;
+  opacity: 1;
+}
+
+.feedback-pagination .swiper-pagination-bullet:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  .feedback-title {
+    font-size: 48px;
+  }
+
+.feedback {
+      padding: 32px 0;
+    }
+
+.feedback-buttons {
+  bottom: 18px;
+}
+}
+
+@media (min-width: 1440px) {
+.feedback {
+      padding: 64px 0;
+    }
+}

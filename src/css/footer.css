@@ -1,0 +1,133 @@
+.footer {
+    padding-bottom: 32px;
+    background-color: #6B0609;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 228px;
+    height: 97px;
+}
+
+.footer-svg-logo {
+    fill: #ffffff;
+}
+
+.footer-list-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.footer-item-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+    transition: color 500ms ease;
+}
+
+.footer-item-link:hover, 
+.footer-item-link:focus {
+    color: #ccc;
+}
+
+.footer-list-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 24px;
+    gap: 24px;
+}
+
+.footer-item-social {
+    width: 24px;
+    height: 24px;
+}
+
+.link-social{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.social-svg {
+    fill: #ffffff;
+    transition: fill 500ms ease;
+}
+
+.social-svg-instagram {
+    fill: #080c09;
+    transition: fill 500ms ease;
+}
+
+.social-svg-instagram:hover,
+.social-svg-instagram:focus {
+    fill: #975052;
+}
+
+.social-svg:hover,
+.social-svg:focus {
+    fill: #ccc;
+}
+
+.footer-rights {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.6;
+    width: 100%;
+    height: 19px;
+    text-align: center;
+    color: #ffffff;
+}
+
+@media screen and (min-width: 768px){
+.footer-list-link {
+    flex-direction: row;
+    width: 409px;
+    height: 26px;
+}
+
+.footer-rights{
+    width: 704px;
+    height: 22px;
+    font-size: 14px;
+}
+}
+
+@media screen and (min-width: 1440px){
+.footer {
+    padding-bottom: 0;
+}
+
+.footer-container {
+    flex-direction: row;
+    gap: 0;
+    position: relative;
+}
+
+.footer-list-link {
+    margin: 0 80px 0 474px;
+    width: 409px;
+    height: 26px;
+}
+
+.footer-rights {
+    position: absolute;
+    left: 374px;
+    width: 315px;
+    height: 22px;
+}
+}
