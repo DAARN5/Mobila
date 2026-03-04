@@ -20,7 +20,7 @@ export default defineConfig(({ command }) => {
       emptyOutDir: true,
 
       rollupOptions: {
-   
+
         input: glob.sync('*.html'),
 
         output: {
